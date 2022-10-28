@@ -1,10 +1,38 @@
 {
     "basket": [
-      { "id": 1, "item": "Bike", "price": 499.99, "payment_method": null },
-      { "id": 2, "item": "Toy Box", "price": 4.99, "payment_method": null },
-      { "id": 3, "item": "Remote Control Car", "price": 49.99, "payment_method": null },
-      { "id": 4, "item": "Pram", "price": 29.99, "payment_method": null},
-      { "id": 5, "item": "Comuter Game", "price": 39.99, "payment_method": null }
+      { 
+        "id": 1,
+        "name": "Throwback Hip Bag",
+        "href": "#",
+        "color": "Salmon",
+        "price": "$90.00",
+        "quantity": 1,
+        "imageSrc":
+        "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg",
+        "imageAlt": "Testing Alt"
+      },
+      { 
+        "id": 2,
+        "name": "Medium Stuff Satchel",
+        "href": "#",
+        "color": "Blue",
+        "price": "$23.00",
+        "quantity": 1,
+        "imageSrc":
+        "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg",
+        "imageAlt": "Testing Alt"
+      },
+      { 
+        "id": 3,
+        "name": "Large Bag",
+        "href": "#",
+        "color": "Red",
+        "price": "$56.00",
+        "quantity": 1,
+        "imageSrc":
+        "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-03.jpg",
+        "imageAlt": "Testing Alt"
+      }
     ]
    
   }
