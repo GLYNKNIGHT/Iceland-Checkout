@@ -13,10 +13,11 @@ useEffect(()=> {
     .then((data)=> {console.log(data); setBasket(data)});
 
   }, [])
+
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Checkout</h1>
+        <h1 className="text-5xl font-bold underline">Checkout</h1>
       </header>
       <section>
       {basket && <List basket = {basket}/>}
