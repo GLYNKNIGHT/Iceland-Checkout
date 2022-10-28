@@ -1,1 +1,1 @@
-// npx json-server -p 8000 -w data/db.json
+// npx json-server -p 8000 -w db.json
