@@ -1,0 +1,1 @@
+// Popup extension to be generated for each payment method

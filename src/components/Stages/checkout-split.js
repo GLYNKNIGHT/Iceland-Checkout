@@ -1,0 +1,1 @@
+// Split checkout page with columnised UX design
