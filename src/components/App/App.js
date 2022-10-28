@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import CheckoutSplit from '../Stages/checkout-split';
 import Checkout from '../Stages/Checkout';
 import SplitPayment from '../Stages/split-payment'
-
+import {  Link } from "react-router-dom";
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="text-5xl font-bold underline">Checkout</h1>
+       <Link to="/"> <h1 className="text-5xl font-bold underline">Checkout</h1></Link>
       </header>
       <section>
   
@@ -21,10 +21,9 @@ function App() {
        
         <Routes >
           <Route index element={<Checkout />} />
-          {/*<Route path="checkout-split" element={<Checkout-split />} />
-          <Route path="split-payment" element={<Split-Payment />} />
-      */}
-        </Routes>
+          <Route path="split-payment" element={<SplitPayment/>} />
+          <Route path="checkout-split" element={<CheckoutSplit/> } /> 
+              </Routes>
       </section>
     </div>
   );

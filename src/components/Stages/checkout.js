@@ -1,9 +1,13 @@
 import List from "../List/List"
 import { useState, useEffect } from "react"
+import {  Link } from "react-router-dom";
+import Popup from "../Popup/Popup"
 
 const Checkout = () =>{
 
-    const [basket, setBasket] = useState()
+    const [basket, setBasket] = useState();
+    const [paymentPopup, setPaymentPopup] = useState(false);
+
     useEffect(()=> {
         fetch('http://localhost:8000/basket')
         .then(res =>{
@@ -16,9 +20,11 @@ const Checkout = () =>{
 
 return <div>
     {basket && <List basket = {basket}/>}
-      
-    <button className=''>Single Payment Method</button>
-    <button >Split Payment Method</button>
+
+    {(paymentPopup === true)?<Popup basket={basket}/>: null} 
+     <button onClick={()=> setPaymentPopup(true)} className=''>Single Payment Method</button>
+     <p>|| </p>
+    <Link to="split-payment"><button>Split Payment Method</button></Link>
     </div>
 }
 
