@@ -21,10 +21,17 @@ const Checkout = () =>{
 return <div>
     {basket && <List basket = {basket}/>}
 
-    {(paymentPopup === true)?<Popup basket={basket}/>: null} 
-     <button onClick={()=> setPaymentPopup(true)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Single Payment Method</button>
-     <p>|| </p>
-    <Link to="split-payment"><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Split Payment Method</button></Link>
+    <div className="py-6 px-4 sm:px-6">
+            <div className="mt-6">
+            {(paymentPopup === true)?<Popup basket={basket}/>: null} 
+            <button onClick={()=> setPaymentPopup(true)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Single Payment Method</button>
+            <p>|| </p>
+    
+            </div>
+            <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
+            <Link to="split-payment"><button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Split Payment Method</button></Link>
+            </div>
+        </div>
     </div>
 }
 

@@ -1,9 +1,10 @@
-
+import Products from "./product-list"
 const List  =({basket}) =>{
 
    return  <div className="basket_list">
-    {basket.map((item) => <div><h3>{item.item} {item.price} </h3></div>)}
+    <Products basket={basket}/>
     </div>
+
 }
 
 export default List;
