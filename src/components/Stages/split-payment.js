@@ -33,16 +33,16 @@ const SplitPayment = ()=>{
                 <li key={product.id} className="flex py-6">
                     <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                         <img
-                        src={product.image}
+                        src={product.imageSrc}
                         alt={product.imageAlt}
                         className="h-full w-full object-cover object-center"
                         />
                     </div>
 
                     <div className="ml-4 flex flex-1 flex-col">
-                        <div className="flex flex-1 items-end justify-between text-sm">{product.item}</div>
+                        <div className="flex flex-1 items-end justify-between text-sm">{product.name}</div>
                         <div className="flex flex-1 items-end justify-between text-sm">Price {product.price}</div>
-                        <div className="flex flex-1 items-end justify-between text-sm">Qty {product.qty}</div>
+                        <div className="flex flex-1 items-end justify-between text-sm">Qty {product.quantity}</div>
                     </div>
                     <div className="ml-4 flex flex-1">
                         <div onClick={selectPayment} className={isActive ? " border-white " + "m-2 sm:m-4 w-16 h-16 bg-gray-200 bg-paypal-icon bg-[length:32x] bg-center bg-no-repeat rounded-lg border-2" : " border-yellow-500 " + "m-2 sm:m-4 w-16 h-16 bg-gray-200 bg-paypal-icon bg-[length:32x] bg-center bg-no-repeat rounded-lg border-2"}></div>
