@@ -1,10 +1,10 @@
 {
     "basket": [
-      { "id": 1, "item": "Bike", "price": 499.99, "payment_method": null },
-      { "id": 2, "item": "Toy Box", "price": 4.99, "payment_method": null },
-      { "id": 3, "item": "Remote Control Car", "price": 49.99, "payment_method": null },
-      { "id": 4, "item": "Pram", "price": 29.99, "payment_method": null},
-      { "id": 5, "item": "Comuter Game", "price": 39.99, "payment_method": null }
+      { "id": 1, "image":"https://via.placeholder.com/150", "item": "Bike", "price": 499.99, "qty":"1", "payment_method": null },
+      { "id": 2, "image":"https://via.placeholder.com/150","item": "Toy Box", "price": 4.99, "qty":"1", "payment_method": null },
+      { "id": 3, "image":"https://via.placeholder.com/150","item": "Remote Control Car", "price": 49.99, "qty":"1", "payment_method": null },
+      { "id": 4, "image":"https://via.placeholder.com/150","item": "Pram", "price": 29.99, "qty":"1", "payment_method": null},
+      { "id": 5, "image":"https://via.placeholder.com/150","item": "Comuter Game", "price": 39.99, "qty":"1", "payment_method": null }
     ]
    
   }

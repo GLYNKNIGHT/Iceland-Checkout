@@ -1,8 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/components/App/App.js", "./src/components/List/List.js", "./src/index.js", "./src/components/Stages/Checkout.js"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {  
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'paypal-icon': "url('./assets/paypal-icon.png')",
+        'mastercard-icon': "url('./assets/mastercard-icon.png')"
+      }
+    },
   },
   plugins: [],
 }
