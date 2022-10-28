@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import './App.css';
 import List from "../List/List"
+import HeaderLayout from '../Layout/header';
 function App() {
 const [basket, setBasket] = useState()
 
@@ -16,14 +17,17 @@ useEffect(()=> {
 
   return (
     <div className="App">
+    
       <header className="App-header">
-        <h1 className="text-5xl font-bold underline">Checkout</h1>
+      <HeaderLayout/>
       </header>
-      <section>
+
+     <section>
       {basket && <List basket = {basket}/>}
         <button>Single Payment Method</button>
         <button>Split Payment Method</button>
       </section>
+   
     </div>
   );
 }
