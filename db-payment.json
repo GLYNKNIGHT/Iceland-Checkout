@@ -1,0 +1,11 @@
+{
+    "basket": [
+      { "id": 1, "item": "Bike", "price": 499.99, "payment_method": null },
+      { "id": 2, "item": "Toy Box", "price": 4.99, "payment_method": null },
+      { "id": 3, "item": "Remote Control Car", "price": 49.99, "payment_method": null },
+      { "id": 4, "item": "Pram", "price": 29.99, "payment_method": null},
+      { "id": 5, "item": "Comuter Game", "price": 39.99, "payment_method": null }
+    ]
+   
+  }
+

@@ -8,14 +8,12 @@ const [basket, setBasket] = useState()
 
 import { Routes, Route } from "react-router-dom";
 import CheckoutSplit from '../Stages/checkout-split';
-import Checkout from '../Stages/Checkout';
+import Checkout from '../Stages/checkout';
 import SplitPayment from '../Stages/split-payment'
 import {  Link } from "react-router-dom";
 
 
 function App() {
-
-
 
   return (
     <div className="App">
@@ -31,12 +29,7 @@ function App() {
         <button>Split Payment Method</button>
 
        <Link to="/"> <h1 className="text-5xl font-bold underline">Checkout</h1></Link>
-      </header>
-      <section>
-  
-        
-       
-        <Routes >
+        <Routes>
           <Route index element={<Checkout />} />
           <Route path="split-payment" element={<SplitPayment/>} />
           <Route path="checkout-split" element={<CheckoutSplit/> } /> 

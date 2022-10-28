@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {  
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'paypal-icon': "url('./assets/paypal-icon.png')",
+        'mastercard-icon': "url('./assets/mastercard-icon.png')"
+      }
+    },
   },
   plugins: [],
 }
